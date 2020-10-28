@@ -118,6 +118,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner in = new Scanner((System.in));
+        Interval a;
         int first,last;
         int length;
         System.out.println("Введіть інтервал:");
@@ -125,7 +126,7 @@ public class Main {
         last = in.nextInt();
         System.out.println("Введіть довжину ряду Фібоначчі:");
         length = in.nextInt();
-        Interval a = new Interval(first,last,length);
+        a = new Interval(first,last,length);
         System.out.println(a.toString());
 
     }
